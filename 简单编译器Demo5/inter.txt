@@ -1,0 +1,17 @@
+
+VAR exvar1(int)
+VAR exvar2(int)
+
+FUNCTION main - 40 :
+  temp1 := #10
+  var2<+0> := temp1
+  temp2 := #5
+  var3<+8> := temp2
+  temp3 := #3
+  var4<+16> := temp3
+  temp4 := #1
+  var5<+24> := temp4
+  temp5 := var2<+0> \ var3<+8>
+  var6<+32> := temp5
+  RETURN var6<+32>
+LABEL label1 :

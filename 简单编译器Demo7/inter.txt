@@ -1,0 +1,15 @@
+
+ARRAY exvar1(int)[20]<+160>
+VAR exvar2(int)<+8>
+VAR exvar3(int)<+8>
+VAR exvar4(int)<+8>
+
+FUNCTION main - 416 :
+  ARRAY var2(int)[50]<+0>
+  temp1 := #20
+  var3<+400> := temp1
+  temp2 := #10
+  var4<+408> := temp2
+#!tempa := {#8}*{var4<+408>}
+  exvar1<+0><+tempa> := var3<+400>
+LABEL Flabelmain :

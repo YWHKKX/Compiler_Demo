@@ -1,0 +1,22 @@
+STRUCT test :
+  VAR .c(int)<+0>
+  VAR .p2(int)<+4>
+  ARRAY .arr(int)[25]<+8>
+  VAR .d(int)<+108>
+STRUCT test2 :
+  ARRAY .arr(char)[25]<+0>
+  ARRAY .arr2(char)[16]<+25>
+
+VAR var9(test)
+ARRAY var10(int)[36]
+VAR var11(int)
+
+FUNCTION fun :
+  PARAM var13(int)
+  STRUCT var14(test2)
+  var9(test.d)<+108> := var10[14]
+  var10[14] := var14(test2.arr2[15])<+40>
+LABEL label1 :
+
+FUNCTION main :
+LABEL label3 :

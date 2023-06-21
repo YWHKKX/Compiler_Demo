@@ -1,0 +1,18 @@
+
+VAR exvar1(int)
+VAR exvar2(int)
+
+FUNCTION main - 312 :
+  ARRAY var2(int)[36]<+0>
+  temp1 := #2
+  var3<+288> := temp1
+  temp2 := #1
+  var4<+296> := temp2
+  temp3 := #1
+  var5<+304> := temp3
+  temp6 := #6
+  var2<+104> := temp6
+#!tempa := {#48}*{var3<+288>}+{#8}*{var4<+296>}
+  temp7 := #8
+  var2<+0><+tempa> := temp7
+LABEL Flabelmain :

@@ -1,0 +1,10 @@
+STRUCT test :
+  ARRAY .c(int)[50]<+0>
+  POINTER .a(*int)<+200>
+
+
+FUNCTION fun :
+  ARRAY var5(int)[40]
+  STRUCT var8(*test)
+  STRUCT var9(test)
+LABEL label1 :

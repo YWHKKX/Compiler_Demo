@@ -1,0 +1,23 @@
+ARRAY var1(int)[60]
+VAR var2(int)
+
+FUNCTION fun :
+  PARAM var4
+  PARAM var5
+  PARAM var6
+  temp1 := var4 + var5
+  temp2 := temp1 + var6
+  RETURN temp2
+LABEL label1 :
+
+FUNCTION main :
+  ARRAY var9(int)[96]
+  temp3 := #1
+  temp4 := #1
+  temp5 := #1
+  ARG temp3
+  ARG temp4
+  ARG temp5
+  temp6 := CALL fun
+  var9[0] := temp6
+LABEL label2 :
